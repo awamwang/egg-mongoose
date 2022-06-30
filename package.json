@@ -1,6 +1,6 @@
 {
-  "name": "egg-mongoose",
-  "version": "3.3.1",
+  "name": "@awamwang/egg-mongoose",
+  "version": "6.0.1",
   "description": "egg mongoose plugin",
   "eggPlugin": {
     "name": "mongoose"
@@ -52,13 +52,16 @@
     "lib"
   ],
   "ci": {
-    "version": "8, 10, 12"
+    "version": "10, 16, 18"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-mongoose.git"
+    "url": "git+https://github.com/awamwang/egg-mongoose.git"
   },
   "bugs": {
     "url": "https://github.com/eggjs/egg/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

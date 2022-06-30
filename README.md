@@ -1,4 +1,5 @@
 # egg-mongoose
+
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][codecov-image]][codecov-url]
@@ -7,7 +8,7 @@
 [![npm download][download-image]][download-url]
 
 [npm-image]: https://img.shields.io/npm/v/egg-mongoose.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-mongoose
+[npm-url]: https://npmjs.org/package/@awamwang/egg-mongoose
 [travis-image]: https://img.shields.io/travis/eggjs/egg-mongoose.svg?style=flat-square
 [travis-url]: https://travis-ci.org/eggjs/egg-mongoose
 [codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-mongoose.svg?style=flat-square
@@ -17,15 +18,9 @@
 [snyk-image]: https://snyk.io/test/npm/egg-mongoose/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-mongoose
 [download-image]: https://img.shields.io/npm/dm/egg-mongoose.svg?style=flat-square
-[download-url]: https://npmjs.org/package/egg-mongoose
+[download-url]: https://npmjs.org/package/@awamwang/egg-mongoose
 
 Egg's mongoose plugin.
-
-## Install
-
-```bash
-$ npm i egg-mongoose --save
-```
 
 ## Configuration
 
@@ -115,7 +110,7 @@ exports.mongoose = {
 module.exports = app => {
   const mongoose = app.mongoose;
   const Schema = mongoose.Schema;
-  const conn = app.mongooseDB.get('db1'); 
+  const conn = app.mongooseDB.get('db1');
 
   const UserSchema = new Schema({
     userName: { type: String },
