@@ -1,4 +1,5 @@
 'use strict';
+const mongoose = require('mongoose');
 
 /**
   * mongoose default config
@@ -14,4 +15,14 @@ exports.mongoose = {
   loadModel: true,
   app: true,
   agent: false,
+  customLoader: {
+    model: {
+      directory: 'app/model',
+      inject: 'app',
+      caseStyle: 'upper',
+      filter(model) {
+        return typeof model === 'function' && model.prototype instanceof mongoose.Model;
+      },
+    },
+  },
 };
