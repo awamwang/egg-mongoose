@@ -1,6 +1,6 @@
 {
   "name": "@awamwang/egg-mongoose",
-  "version": "6.0.1",
+  "version": "7.0.1",
   "description": "egg mongoose plugin",
   "eggPlugin": {
     "name": "mongoose"
@@ -13,8 +13,7 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "await-first": "^1.0.0",
-    "mongoose": "^6.4.1"
+    "await-first": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^16.0.0",
@@ -27,6 +26,7 @@
     "eslint": "^8.18.0",
     "eslint-config-egg": "^12.0.0",
     "mocha": "^10.0.0",
+    "mongoose": "^7.0.3",
     "supertest": "^6.2.3",
     "typescript": "^4.7.4",
     "webstorm-disable-index": "^1.2.0"
@@ -63,5 +63,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "peerDependencies": {
+    "mongoose": "^7.0.3"
   }
 }
